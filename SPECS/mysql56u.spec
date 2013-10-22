@@ -817,6 +817,7 @@ fi
 /usr/share/aclocal/mysql.m4
 %{_libdir}/mysql/libmysqlclient.so
 %{_libdir}/mysql/libmysqlclient_r.so
+%{_libdir}/mysql/libmysqlservices.a
 
 %files embedded
 %doc README COPYING README.mysql-license
