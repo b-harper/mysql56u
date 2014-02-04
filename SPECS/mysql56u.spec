@@ -486,7 +486,6 @@ ln -s ../../../../../bin/my_safe_process %{buildroot}%{_datadir}/mysql-test/lib/
 # not needed in rpm package
 rm -f %{buildroot}%{_bindir}/mysqlaccess.conf
 rm -f %{buildroot}%{_bindir}/mysql_embedded
-rm -f %{buildroot}%{_libdir}/mysql/*.a
 rm -f %{buildroot}%{_datadir}/%{name}/binary-configure
 rm -f %{buildroot}%{_datadir}/%{name}/magic
 rm -f %{buildroot}%{_datadir}/%{name}/mysql.server
@@ -827,6 +826,9 @@ fi
 /usr/share/aclocal/mysql.m4
 %{_libdir}/mysql/libmysqlclient.so
 %{_libdir}/mysql/libmysqlclient_r.so
+%{_libdir}/mysql/libmysqlclient.a
+%{_libdir}/mysql/libmysqlclient_r.a
+%{_libdir}/mysql/libmysqlservices.a
 
 %files embedded
 %doc README COPYING README.mysql-license
